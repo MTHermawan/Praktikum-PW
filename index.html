@@ -5,65 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1><em>QUIS</em></h1>
-        <nav>
-            <ul>
-                <li><a href="buat_kuis.html">Buat Kuis</a></li>
-                <li><a href="index.html">Daftar Kuis</a></li>
-                <li><a href="registrasi.html">Registrasi</a></li>
-                <li><a href="login.html">Log In</a></li>
-            </ul>
-        </nav>
+        <div>
+            <h1><em><a href="index.html" class="text-color-main">QU!S</a></em></h1>
+            <nav>
+                <a href="index.html" class="alt-nav-button">Beranda</a>
+                <a href="#" class="nav-button">Buat Kuis</a>
+            </nav>
+        </div>
+        <div>
+            <nav>
+                <!-- <a href="index.html" class="nav-button">Daftar Kuis</a> -->
+                <a href="#" class="nav-button">Log In</a>
+                <a href="#" class="alt-nav-button">Registrasi</a>
+            </nav>
+        </div>
     </header>
-    <hr><br>
     <main>
-        <section>
-            <h2>Daftar Kuis</h2>
-            <hr>
-            <article>
-                <h3>Wikipedia Kuis</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel illo harum eum corporis unde doloribus.
-                    Nihil magni sed tempore beatae! Excepturi molestiae in, deserunt porro nemo voluptatum dicta
-                    assumenda esse.</p>
-                <a href="kuis.html"><button>Quis!</button></a>
-            </article>
-            <hr>
-            <article>
-                <h3>Kuis A</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo praesentium a
-                    quis id nam corporis non iste pariatur excepturi quod maxime commodi facere quos quaerat, beatae
-                    error.</p>
-                    <a href="kuis.html"><button>Quis!</button></a>
+        <section id="daftar_kuis" class="content-container">
+            <h2 class="content-title">Daftar Kuis</h2>
+            <hr class="hr-main">
+            <div class="card-container">
+                <article class="card">
+                    <h3>Wikipedia Kuis</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel illo harum eum corporis unde
+                        doloribus.
+                        Nihil magni sed tempore beatae! Excepturi molestiae in, deserunt porro nemo voluptatum dicta
+                        assumenda esse.</p>
+                    <a href="#"><button>Quis!</button></a>
                 </article>
-                <hr>
-                <article>
-                    <h3>Kuis B</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo praesentium a
+                <article class="card">
+                    <h3>Kuis A</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo
+                        praesentium a
                         quis id nam corporis non iste pariatur excepturi quod maxime commodi facere quos quaerat, beatae
                         error.</p>
-                        <a href="kuis.html"><button>Quis!</button></a>
-                        <a href="kuis.html"><button>Quis!</button></a>
-                    </article>
-                    <hr>
-                    <article>
-                        <h3>Kuis C</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo praesentium a
-                            quis id nam corporis non iste pariatur excepturi quod maxime commodi facere quos quaerat, beatae
-                            error.</p>
-                            <a href="kuis.html"><button>Quis!</button></a>
-                <hr>
-            </article>
+                    <a href="#"><button>Quis!</button></a>
+                </article>
+                <article class="card">
+                    <h3>Kuis B</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo
+                        praesentium a
+                        quis id nam corporis non iste pariatur excepturi quod maxime commodi facere quos quaerat, beatae
+                        error.</p>
+                    <a href="#"><button>Quis!</button></a>
+                </article>
+                <article class="card">
+                    <h3>Kuis C</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo
+                        praesentium a
+                        quis id nam corporis non iste pariatur excepturi quod maxime commodi facere quos quaerat, beatae
+                        error.</p>
+                    <a href="#"><button>Quis!</button></a>
+                </article>
+                <article class="card">
+                    <h3>Kuis D</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo
+                        praesentium a
+                        quis id nam corporis non iste pariatur excepturi quod maxime commodi facere quos quaerat, beatae
+                        error.</p>
+                    <a href="#"><button>Quis!</button></a>
+                </article>
+                <article class="card">
+                    <h3>Kuis E</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam velit illo
+                        praesentium a
+                        quis id nam corporis non iste pariatur excepturi quod maxime commodi facere quos quaerat, beatae
+                        error.</p>
+                    <a href="#"><button>Quis!</button></a>
+                </article>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Referensi:</p>
-        <ul>
-            <li><a href="https://kahoot.com">kahoot.com</a></li>
-        </ul>
+        <div class="column">
+            <p>© 2025 Quis - MTHermawan</p>
+        </div>
+        <div class="column">
+            <p>Referensi:</p>
+            <a href="https://kahoot.com" target="_blank">Kahoot: kahoot.com</a>
+            <a href="https://wayground.com/admin" target="_blank">Wayground: wayground.com</a>   
+        </div>
+        <div class="column">
+            <p>Kontak:</p>
+            <p>GitHub: <a href="https://github.com/MTHermawan/">MTHermawan</a></p>
+        </div>
     </footer>
 </body>
 
