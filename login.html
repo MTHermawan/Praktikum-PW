@@ -5,27 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <h1><em>QUIS</em></h1>
     </header>
-    <hr>
-    <main>
-        <h2>Login</h2>
-        <form action="index.html">
-            <label for="email">Email: </label>
-            <input type="text" name="email" id="input_email" required>
-            <br><br>
-            <label for="password">Password: </label>
-            <input type="password" name="password" id="input_password" required>
-            <br><br>
-            <button type="submit">Login</button>
-            <p>Belum punya akun? Silakan melakukan <a href="registrasi.html">Sign Up!</a></p>
-        </form>
+    <hr> -->
+    <main class="flex-center">
+        <article class="card flex-center flex-column">
+            <h2>Login</h2>
+            <form action="" class="flex-column" id="form_login">
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="input_email" class="input-text">
+                <label for="password">Password: </label>
+                <input type="password" name="password" id="input_password" class="input-text">
+                <p class="font-red" id="invalid-login-message" style="display: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button type="submit">Login</button>
+                <p class="font-grey">Belum punya akun? Silakan melakukan <a href="#">Sign Up!</a></p>
+            </form>
+        </article>
     </main>
-    <hr>
 </body>
 
+<script src="./Script/login.js"></script>
 </html>
