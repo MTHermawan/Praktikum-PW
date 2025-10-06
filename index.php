@@ -1,27 +1,31 @@
+<?php
+include "login_check.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quis</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Quis - Dashboard</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
     <header>
         <div>
-            <h1><em><a href="index.html" class="text-color-main">QU!S</a></em></h1>
+            <h1><em><a href="./index.php" class="text-color-main">QU!S</a></em></h1>
             <nav>
-                <a href="index.html" class="alt-nav-button">Beranda</a>
+                <a href="./index.php" class="alt-nav-button">Beranda</a>
                 <a href="#" class="nav-button">Buat Kuis</a>
             </nav>
         </div>
         <div>
             <nav>
-                <!-- <a href="index.html" class="nav-button">Daftar Kuis</a> -->
-                <a href="./login.html" class="nav-button">Log In</a>
-                <a href="#" class="alt-nav-button">Registrasi</a>
+                <!-- <a href="./index.php" class="nav-button">Daftar Kuis</a> -->
+                <a href="./login.php" class="nav-button">Log In</a>
+                <a href="./logout.php" class="alt-nav-button">Log Out</a>
             </nav>
         </div>
     </header>

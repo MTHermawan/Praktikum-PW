@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quis</title>
+    <title>Quis - Buat Kuis</title>
 </head>
 
 <body>
@@ -12,10 +12,10 @@
         <h1><em>QUIS</em></h1>
         <nav>
             <ul>
-                <li><a href="buat_kuis.html">Buat Kuis</a></li>
-                <li><a href="index.html">Daftar Kuis</a></li>
-                <li><a href="registrasi.html">Registrasi</a></li>
-                <li><a href="login.html">Log In</a></li>
+                <li><a href="buat_kuis.php">Buat Kuis</a></li>
+                <li><a href="./index.php">Daftar Kuis</a></li>
+                <li><a href="registrasi.php">Registrasi</a></li>
+                <li><a href="login.php">Log In</a></li>
             </ul>
         </nav>
     </header>
