@@ -22,7 +22,7 @@ include "login_check.php";
                 <a href="./buat_kuis.php" class="nav-button">Buat Kuis</a>
             </nav>
         </div>
-        <div>
+        <div>   
             <nav>
                 <!-- <a href="./index.php" class="nav-button">Daftar Kuis</a> -->
                 <a href="./login.php" class="nav-button">Log In</a>
@@ -41,7 +41,7 @@ include "login_check.php";
             </div>
             <div class="card-container">
                 <?php
-                $sql = "SELECT * FROM kuis WHERE id_pembuat = " . $_SESSION['id_user'] . " LIMIT 4";
+                $sql = "SELECT * FROM kuis WHERE id_pembuat = " . $_SESSION['id_user'];
                 $result = $conn->query($sql);
                 if ($result->num_rows == 0) {
                     echo "<p class='font-grey'>Belum ada kuis yang tersedia.</p>";
@@ -54,27 +54,6 @@ include "login_check.php";
                         <?php } ?>
                         <a href="edit-kuis.php?id_kuis=<?php echo $row['id_kuis'] ?>"><button class="button">Edit</button></a>
                         <a href="hapus-kuis.php?id_kuis=<?php echo $row['id_kuis'] ?>"><button class="button">Hapus</button></a>
-                    </article>
-                <?php } ?>
-            </div>
-        </section>
-        <section id="daftar_kuis" class="content-container">
-            <h2 class="content-title">Kuis Lainnya</h2>
-            <hr class="hr-main">
-            <div class="card-container">
-                <?php
-                $sql = "SELECT * FROM kuis WHERE id_pembuat != " . $_SESSION['id_user'];
-                $result = $conn->query($sql);
-                if ($result->num_rows == 0) {
-                    echo "<p class='font-grey'>Belum ada kuis lainnya yang tersedia.</p>";
-                }
-                while ($row = $result->fetch_assoc()) { ?>
-                    <article class="card">
-                        <h3><?php echo $row['judul']; ?></h3>
-                        <?php if ($row['thumbnail'] && file_exists('./uploads/' . $row['thumbnail'])) { ?>
-                            <img src="./uploads/<?php echo $row['thumbnail']; ?>" alt="Thumbnail Kuis">
-                        <?php } ?>
-                        <a href="<?php ?>"><button class="button">Quis!</button></a>
                     </article>
                 <?php } ?>
             </div>
